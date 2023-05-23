@@ -1,4 +1,4 @@
-body {
+main {
   margin: 0;
   padding: 0;
   scrollbar-width: 0;
@@ -6,45 +6,64 @@ body {
   background-image: url("images/background/gradiant-bg.jpg");
   font-family: "Montserrat";
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
-
-#navigation {
-  position: fixed;
-  width: 100%;
-  height: 70px;
+.nav-menu > div > a {
+  text-decoration: none;
+  color: black !important;
+}
+.head > img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.menu {
+  
+  height: 30px;
   display: flex;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: 3px solid black;
+}
+#navigation {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  /* margin-top: 20px; */
 }
 
 #navigation > nav {
   margin-left: auto;
   margin-right: 20px;
+  
+}
+.nav-menu {
+  display: flex;
+  gap: 20px;
 }
 
+.menu:hover {
+  transition: 0.7s all;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
 .profile-pic {
-  max-width: 469px;
-  height: 530px;
+  max-width: 450px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  flex: 1;
+  /* flex: 1;*/
 }
-
-.profile-intro {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .profile-pic img {
   width: 100%;
   height: 100%;
@@ -54,32 +73,6 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-menu > div > a {
-  text-decoration: none;
-  color: white !important;
-}
-
-.menu {
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 10px;
-  border-radius: 7px;
-  border: 3px solid white;
-}
-
-.menu:hover {
-  transition: 0.7s all;
-  border: 3px solid transparent;
-  cursor: pointer;
 }
 
 .container {
@@ -92,10 +85,31 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
 }
-
-#my-works {
-  /* background-color: green; */
+/* #my-works
+ {
+  background-color: green;
 }
 #contact-me {
-  /* background-color: blue; */
+ background-color: blue;
+} */
+.my-works > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: deeppink;
+}
+.my-works {
+  background-color: #adb5bd;
+  width: 300px;
+  padding-left: 30px;
+  padding-top: 10px;
+  border-top: 8px solid #1c7ed6;
+  border-bottom: 8px solid #1c7ed6;
+}
+n {
+  color: #1c7ed6;
+}
+#my-works {
+  padding-top: 60px;
 }
